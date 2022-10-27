@@ -43,7 +43,7 @@ const Blog = () => {
             management to all your applications. ... MongoDB. MongoDB stores
             data in JSON-like documents that can vary in structure, offering.
             ... Passport. ... Okta. ... Firebase. ... JSON Web Token. ...
-            Keycloak. ... Amazon Cognito.
+            Keycloak.Amazon Cognito.
           </p>
         </div>
       </div>
