@@ -13,7 +13,7 @@ const Home = () => {
           />
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold lg:w-10/12">
-              Learn a skill and grow up your skill
+              Learn and grow up 
             </h1>
             <p className="py-6 lg:w-1/2 text-center lg:text-left">
               Build Your Digital Skills For Tomorrow. We Provide You Top Quality
