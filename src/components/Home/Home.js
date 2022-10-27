@@ -16,7 +16,7 @@ const Home = () => {
               Learn a skill and grow up your skill
             </h1>
             <p className="py-6 lg:w-1/2 text-center lg:text-left">
-              Build Your Digital Skills For Tomorrow. We Provide Top Quality
+              Build Your Digital Skills For Tomorrow. We Provide You Top Quality
               Courses for front-end and back-end developent.
             </p>
             <Link to="/courses">
