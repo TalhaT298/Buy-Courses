@@ -36,7 +36,7 @@ const Blog = () => {
             supports authentication using passwords, phone numbers, popular
             federated identity providers like Google, Facebook and Twitter, and
             more. Firebase is from google which is a trusted company for that
-            reason we use firebase.
+            reason we use firebase..
             <br />
             Top Alternatives to Firebase Authentication Auth0. A set of unified
             APIs and tools that instantly enables Single Sign On and user
