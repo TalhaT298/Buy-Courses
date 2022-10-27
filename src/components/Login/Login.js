@@ -86,7 +86,7 @@ const Login = () => {
               Create a new account
             </Link>
           </h4>
-          <div className="divider  mt-5">OR SIGN IN WITH</div>
+          <div className="divider  mt-5">OR SIGN IN</div>
           <div className="flex justify-center mt-5">
             <div
               onClick={handleGoogleLogIn}
