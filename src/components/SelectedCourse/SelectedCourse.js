@@ -62,7 +62,7 @@ const SelectedCourse = () => {
                     <FaClock className="mr-3" />
                     <span className="text-black lg:border-r-2 lg:border-black pr-5">
                       {" "}
-                      20 december 2023
+                      27 October 2022
                     </span>
                   </p>
                 </div>
