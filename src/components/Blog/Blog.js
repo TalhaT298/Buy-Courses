@@ -72,7 +72,7 @@ const Blog = () => {
             Node. js is a JavaScript runtime environment that achieves low
             latency and high throughput by taking a “non-blocking” approach to
             serving requests. In other words, Node. js wastes no time or
-            resources on waiting for I/O requests to return.
+            resources on waiting for I/O requests to return
           </p>
         </div>
       </div>
