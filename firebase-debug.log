@@ -1,40 +1,187 @@
-[debug] [2024-01-29T20:04:46.989Z] ----------------------------------------------------------------------
-[debug] [2024-01-29T20:04:47.001Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-01-29T20:04:47.003Z] CLI Version:   12.6.2
-[debug] [2024-01-29T20:04:47.005Z] Platform:      win32
-[debug] [2024-01-29T20:04:47.006Z] Node Version:  v16.14.2
-[debug] [2024-01-29T20:04:47.222Z] Time:          Tue Jan 30 2024 02:04:47 GMT+0600 (Bangladesh Standard Time)
-[debug] [2024-01-29T20:04:47.223Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:33:56.446Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:33:56.449Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-30T19:33:56.450Z] CLI Version:   13.1.0
+[debug] [2024-01-30T19:33:56.450Z] Platform:      win32
+[debug] [2024-01-30T19:33:56.450Z] Node Version:  v20.11.0
+[debug] [2024-01-30T19:33:56.450Z] Time:          Wed Jan 31 2024 01:33:56 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-30T19:33:56.450Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-01-29T20:04:47.300Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-01-29T20:04:48.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-01-29T20:04:48.096Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
-[debug] [2024-01-29T20:04:48.097Z] [iam] checking project educare-bd0b7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-01-29T20:04:48.101Z] > refreshing access token with scopes: []
-[debug] [2024-01-29T20:04:48.105Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-01-29T20:04:48.105Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-29T20:04:48.485Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
-[debug] [2024-01-29T20:04:48.486Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-29T20:04:48.487Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions [none]
-[debug] [2024-01-29T20:04:48.488Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions x-goog-quota-user=projects/educare-bd0b7
-[debug] [2024-01-29T20:04:48.489Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-01-29T20:04:48.745Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2024-01-29T20:04:48.746Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[debug] [2024-01-29T20:04:49.996Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions 401
-[debug] [2024-01-29T20:04:49.996Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
-[debug] [2024-01-29T20:04:50.001Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-01-29T20:04:50.004Z] > refreshing access token with scopes: []
-[debug] [2024-01-29T20:04:50.008Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-01-29T20:04:50.009Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-29T20:04:50.230Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
-[debug] [2024-01-29T20:04:50.231Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-29T20:04:50.234Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 [none]
-[debug] [2024-01-29T20:04:50.804Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 401
-[debug] [2024-01-29T20:04:50.804Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2024-01-29T20:04:50.805Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-01-29T20:04:51.026Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:33:56.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-30T19:33:56.519Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Programming-Hero\assingment-10\educare
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-30T19:34:45.361Z] Using project from CLI flag: educare-bd0b7
+[debug] [2024-01-30T19:34:45.362Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:34:45.363Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:34:45.363Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:34:45.738Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:34:45.738Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:34:45.738Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 [none]
+[debug] [2024-01-30T19:34:46.279Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 401
+[debug] [2024-01-30T19:34:46.279Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-30T19:34:46.279Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:34:46.494Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at responseToError (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
-    at RetryOperation._fn (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at RetryOperation._fn (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project educare-bd0b7. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-01-30T19:35:24.275Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:35:24.278Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-30T19:35:24.278Z] CLI Version:   13.1.0
+[debug] [2024-01-30T19:35:24.278Z] Platform:      win32
+[debug] [2024-01-30T19:35:24.278Z] Node Version:  v20.11.0
+[debug] [2024-01-30T19:35:24.278Z] Time:          Wed Jan 31 2024 01:35:24 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-30T19:35:24.279Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-30T19:35:24.353Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-30T19:35:24.354Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
+[debug] [2024-01-30T19:35:24.354Z] [iam] checking project educare-bd0b7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-30T19:35:24.360Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:35:24.362Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:35:24.362Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:35:24.727Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:35:24.727Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:35:24.727Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions [none]
+[debug] [2024-01-30T19:35:24.727Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions x-goog-quota-user=projects/educare-bd0b7
+[debug] [2024-01-30T19:35:24.727Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-30T19:35:25.991Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions 401
+[debug] [2024-01-30T19:35:25.991Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2024-01-30T19:35:25.992Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:35:25.992Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:35:25.992Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:35:25.992Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:35:26.105Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:35:26.105Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:35:26.106Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 [none]
+[debug] [2024-01-30T19:35:26.355Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 401
+[debug] [2024-01-30T19:35:26.355Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-30T19:35:26.356Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-01-30T19:41:29.696Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:41:29.699Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-30T19:41:29.699Z] CLI Version:   13.1.0
+[debug] [2024-01-30T19:41:29.700Z] Platform:      win32
+[debug] [2024-01-30T19:41:29.700Z] Node Version:  v20.11.0
+[debug] [2024-01-30T19:41:29.700Z] Time:          Wed Jan 31 2024 01:41:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-30T19:41:29.700Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-30T19:41:29.775Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-30T19:41:29.776Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Programming-Hero\assingment-10\educare
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-30T19:41:57.351Z] Using project from CLI flag: educare-bd0b7
+[debug] [2024-01-30T19:41:57.353Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:41:57.354Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:41:57.354Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:41:57.706Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:41:57.706Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:41:57.706Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 [none]
+[debug] [2024-01-30T19:41:58.249Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 401
+[debug] [2024-01-30T19:41:58.250Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-30T19:41:58.250Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:41:58.468Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project educare-bd0b7. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-01-30T19:42:13.449Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:42:13.452Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2024-01-30T19:42:13.452Z] CLI Version:   13.1.0
+[debug] [2024-01-30T19:42:13.452Z] Platform:      win32
+[debug] [2024-01-30T19:42:13.453Z] Node Version:  v20.11.0
+[debug] [2024-01-30T19:42:13.453Z] Time:          Wed Jan 31 2024 01:42:13 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-30T19:42:13.453Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-30T19:42:13.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-30T19:42:13.536Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
+[debug] [2024-01-30T19:42:13.538Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:42:13.539Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:42:13.539Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:42:13.810Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:42:13.810Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:42:13.812Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-01-30T19:42:14.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2024-01-30T19:42:14.338Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-01-30T19:42:14.340Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:42:14.546Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-01-30T19:43:35.195Z] ----------------------------------------------------------------------
+[debug] [2024-01-30T19:43:35.198Z] Command:       D:\node js\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-30T19:43:35.198Z] CLI Version:   13.1.0
+[debug] [2024-01-30T19:43:35.198Z] Platform:      win32
+[debug] [2024-01-30T19:43:35.198Z] Node Version:  v20.11.0
+[debug] [2024-01-30T19:43:35.198Z] Time:          Wed Jan 31 2024 01:43:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-01-30T19:43:35.199Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-30T19:43:35.275Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-30T19:43:35.276Z] > authorizing via signed-in user (mdtalha2008@gmail.com)
+[debug] [2024-01-30T19:43:35.276Z] [iam] checking project educare-bd0b7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-30T19:43:35.282Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:43:35.283Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:43:35.284Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:43:35.556Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:43:35.556Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:43:35.556Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions [none]
+[debug] [2024-01-30T19:43:35.557Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions x-goog-quota-user=projects/educare-bd0b7
+[debug] [2024-01-30T19:43:35.557Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-30T19:43:36.793Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions 401
+[debug] [2024-01-30T19:43:36.793Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/educare-bd0b7:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-01-30T19:43:36.794Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-30T19:43:36.794Z] > refreshing access token with scopes: []
+[debug] [2024-01-30T19:43:36.795Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-30T19:43:36.795Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:43:36.877Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-30T19:43:36.878Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-30T19:43:36.879Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 [none]
+[debug] [2024-01-30T19:43:37.191Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 401
+[debug] [2024-01-30T19:43:37.191Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educare-bd0b7 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-30T19:43:37.191Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
