@@ -118,7 +118,7 @@ const Header = () => {
                 </Link>
                 <Link to="/register">
                   <button className="btn btn-primary rounded-full mr-3 hidden lg:block">
-                    Register.
+                    Register
                   </button>
                 </Link>
               </>
